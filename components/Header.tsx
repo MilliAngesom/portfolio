@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X, Github, Linkedin } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);

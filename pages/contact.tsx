@@ -1,37 +1,8 @@
 import Layout from '@/components/Layout';
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Mail, MapPin } from 'lucide-react';
 
 export default function Contact() {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-    const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setStatus('submitting');
-
-        try {
-            const res = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
-            });
-            if (res.ok) {
-                setStatus('success');
-                setFormData({ name: '', email: '', message: '' });
-            } else {
-                setStatus('error');
-            }
-        } catch (error) {
-            setStatus('error');
-        }
-    };
-
     return (
         <Layout title="Contact - Million Angesom Asefaw">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -62,7 +33,14 @@ export default function Contact() {
                         </section>
 
                         <section className="bg-white p-8 rounded-2xl shadow-sm">
-                            <form onSubmit={handleSubmit} className="space-y-6">
+                            <form action="https://formsubmit.co/million.angesom1994@gmail.com" method="POST" className="space-y-6">
+                                {/* Honeypot */}
+                                <input type="text" name="_honey" style={{ display: 'none' }} />
+                                {/* Disable Captcha */}
+                                <input type="hidden" name="_captcha" value="false" />
+                                {/* Success Redirect */}
+                                <input type="hidden" name="_next" value="https://millionangesom.vercel.app/contact?success=1" />
+
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                                     <input
@@ -70,8 +48,6 @@ export default function Contact() {
                                         name="name"
                                         id="name"
                                         required
-                                        value={formData.name}
-                                        onChange={handleChange}
                                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring-accent sm:text-sm p-2 border"
                                     />
                                 </div>
@@ -82,8 +58,6 @@ export default function Contact() {
                                         name="email"
                                         id="email"
                                         required
-                                        value={formData.email}
-                                        onChange={handleChange}
                                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring-accent sm:text-sm p-2 border"
                                     />
                                 </div>
@@ -94,27 +68,18 @@ export default function Contact() {
                                         id="message"
                                         rows={4}
                                         required
-                                        value={formData.message}
-                                        onChange={handleChange}
                                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring-accent sm:text-sm p-2 border"
                                     />
                                 </div>
                                 <div>
                                     <button
                                         type="submit"
-                                        disabled={status === 'submitting'}
-                                        className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-accent hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent disabled:opacity-50"
+                                        className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-accent hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
                                     >
-                                        {status === 'submitting' ? 'Sending...' : 'Send Message'}
+                                        Send Message
                                         <Send className="ml-2 h-4 w-4" />
                                     </button>
                                 </div>
-                                {status === 'success' && (
-                                    <p className="text-green-600 text-sm mt-2">Message sent successfully! I'll get back to you soon.</p>
-                                )}
-                                {status === 'error' && (
-                                    <p className="text-red-600 text-sm mt-2">Something went wrong. Please try emailing me directly.</p>
-                                )}
                             </form>
                         </section>
                     </div>

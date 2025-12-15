@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout';
 import { motion } from 'framer-motion';
+import Timeline from '@/components/Timeline';
 
 export default function About() {
     return (
@@ -27,32 +28,37 @@ export default function About() {
                         </div>
                     </section>
 
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-semibold text-accent mb-8">Timeline</h2>
+                        <Timeline />
+                    </section>
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         <section>
                             <h2 className="text-2xl font-semibold text-accent mb-4">Skills</h2>
                             <div className="space-y-4">
                                 <div>
-                                    <h3 className="font-bold text-gray-900">Core Technical</h3>
-                                    <p className="text-gray-600">SLAM (visual & sonar), Visual-Inertial SLAM, Pose Graph Optimization (GTSAM), LIDAR/ICP/GICP, Point Cloud Library (PCL), ROS, OpenCV, Eigen.</p>
+                                    <h3 className="font-bold text-gray-900 dark:text-gray-100">Core Technical</h3>
+                                    <p className="text-gray-600 dark:text-gray-400">SLAM (visual & sonar), Visual-Inertial SLAM, Pose Graph Optimization (GTSAM), LIDAR/ICP/GICP, Point Cloud Library (PCL), ROS, OpenCV, Eigen.</p>
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-gray-900">Programming</h3>
-                                    <p className="text-gray-600">C, C++, Python, MATLAB/Simulink, PyTorch.</p>
+                                    <h3 className="font-bold text-gray-900 dark:text-gray-100">Programming</h3>
+                                    <p className="text-gray-600 dark:text-gray-400">C, C++, Python, MATLAB/Simulink, PyTorch.</p>
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-gray-900">Robotics Tools</h3>
-                                    <p className="text-gray-600">IsaacSim, Gazebo, OMPL, PyTrees, Stonefish, DVL/IMU integration.</p>
+                                    <h3 className="font-bold text-gray-900 dark:text-gray-100">Robotics Tools</h3>
+                                    <p className="text-gray-600 dark:text-gray-400">IsaacSim, Gazebo, OMPL, PyTrees, Stonefish, DVL/IMU integration.</p>
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-gray-900">Other</h3>
-                                    <p className="text-gray-600">Control systems, motion planning (OMPL, RRT*), reinforcement learning experiments (Q-learning).</p>
+                                    <h3 className="font-bold text-gray-900 dark:text-gray-100">Other</h3>
+                                    <p className="text-gray-600 dark:text-gray-400">Control systems, motion planning (OMPL, RRT*), reinforcement learning experiments (Q-learning).</p>
                                 </div>
                             </div>
                         </section>
 
                         <section>
                             <h2 className="text-2xl font-semibold text-accent mb-4">Languages & Soft Skills</h2>
-                            <ul className="list-disc list-inside text-gray-700 space-y-2">
+                            <ul className="list-disc list-inside text-gray-700 dark:text-gray-400 space-y-2">
                                 <li><strong>Languages:</strong> Tigrigna (native), English (proficient).</li>
                                 <li><strong>Soft Skills:</strong> Organization, communication, leadership, analytical thinking, teamwork.</li>
                             </ul>

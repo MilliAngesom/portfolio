@@ -38,8 +38,10 @@ const Header = () => {
                             <Linkedin className="h-6 w-6" />
                             <span className="sr-only">LinkedIn</span>
                         </a>
+                        <ThemeToggle />
                     </div>
                     <div className="-mr-2 flex items-center lg:hidden">
+                        <ThemeToggle />
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             type="button"

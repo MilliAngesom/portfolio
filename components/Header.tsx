@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X, Github, Linkedin } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,6 @@ const Header = () => {
         { name: 'About', href: '/about' },
         { name: 'Research', href: '/research' },
         { name: 'Projects', href: '/projects' },
-        { name: 'CV', href: '/cv' },
         { name: 'Contact', href: '/contact' },
     ];
 
@@ -38,8 +38,10 @@ const Header = () => {
                             <Linkedin className="h-6 w-6" />
                             <span className="sr-only">LinkedIn</span>
                         </a>
+                        <ThemeToggle />
                     </div>
                     <div className="-mr-2 flex items-center lg:hidden">
+                        <ThemeToggle />
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             type="button"

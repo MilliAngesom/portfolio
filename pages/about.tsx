@@ -23,7 +23,7 @@ export default function About() {
                                 I hold an Erasmus Mundus Joint MSc in Intelligent Field Robotic Systems (IFRoS, 2022–2024) which was held at the University of Girona and University of Zagreb, and a BSc in Electrical and Electronics Engineering (2017) from Eritrea Institute of Technology.
                             </p>
                             <p>
-                                My research interests include <strong>visual SLAM, acoustic/echo-based mapping, sensor fusion, motion planning, and control for autonomous systems</strong>.
+                                My research interests include <strong>visual SLAM, acoustic/echo-based mapping, sensor fusion, motion planning, and control for autonomous systems</strong>. I also work as <strong>an independent contractor</strong> on robotics software and autonomous systems projects.
                             </p>
                         </div>
                     </section>

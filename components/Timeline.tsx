@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 
 const Timeline = () => {
     const experiences = [
+        { title: "Independent Contractor – Robotics Software Development", date: "Jan 2026 – Present", description: "Providing robotics and software development services to international clients. Developing and testing software components for robotics simulation and autonomous systems. Contributing to algorithm development related to perception, navigation, and system integration. Collaborating with client teams while maintaining independence." },
         { title: "PhD @ UQTR (started Sep 2025)", date: "Present", description: "Autonomous Vehicles / Robotics" },
         { title: "PhD student (previous) @ KU Leuven", date: "Oct 2024 – Aug 2025", description: "DRAMCO Research Group" },
         { title: "Robot Software Engineer", date: "Mar – Sep 2024", description: "Farming Revolution GmbH (Internship)" },

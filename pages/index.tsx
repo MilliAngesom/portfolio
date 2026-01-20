@@ -54,7 +54,7 @@ export default function Home() {
                             transition={{ duration: 0.5, delay: 0.4 }}
                             className="text-lg text-gray-400 mb-8 max-w-lg"
                         >
-                            I am a robotics researcher currently pursuing a PhD at Université du Québec à Trois-Rivières (UQTR) in the Autonomous Vehicles / Robotics area. My research interests include visual SLAM, acoustic/echo-based mapping, sensor fusion, motion planning, and control for autonomous systems.
+                            Robotics researcher and PhD student at UQTR, with interests in SLAM, acoustic mapping, sensor fusion, and autonomous systems. I also work as an independent contractor on robotics software and autonomous systems projects.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}

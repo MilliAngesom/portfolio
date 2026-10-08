@@ -28,7 +28,7 @@ const Layout = ({ children, title = "Million Angesom Asefaw - Robotics Researche
                             "url": "https://millionangesom.vercel.app/",
                             "sameAs": [
                                 "https://github.com/MilliAngesom",
-                                "https://www.linkedin.com/in/million-angesom-101b571a1"
+                                "https://www.linkedin.com/in/million-angesom-asefaw-101b571a1"
                             ]
                         })
                     }}
@@ -52,3 +52,4 @@ const Layout = ({ children, title = "Million Angesom Asefaw - Robotics Researche
 };
 
 export default Layout;
+

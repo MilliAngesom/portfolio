@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="flex space-x-6">
                     <Link href="/contact" className="hover:text-accent font-medium">Contact</Link>
                     <a href="https://github.com/MilliAngesom" target="_blank" rel="noopener noreferrer" className="hover:text-accent font-medium">GitHub</a>
-                    <a href="https://www.linkedin.com/in/million-angesom-101b571a1" target="_blank" rel="noopener noreferrer" className="hover:text-accent font-medium">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/million-angesom-asefaw-101b571a1" target="_blank" rel="noopener noreferrer" className="hover:text-accent font-medium">LinkedIn</a>
                 </div>
             </div>
         </footer>
@@ -20,3 +20,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

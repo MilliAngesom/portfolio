@@ -21,7 +21,7 @@ export default function Home() {
                                 name: 'Université du Québec à Trois-Rivières (UQTR)',
                             },
                             sameAs: [
-                                'https://www.linkedin.com/in/million-angesom-101b571a1',
+                                'https://www.linkedin.com/in/million-angesom-asefaw-101b571a1',
                                 'https://github.com/MilliAngesom',
                             ],
                         }),
@@ -89,3 +89,4 @@ export default function Home() {
         </Layout>
     );
 }
+

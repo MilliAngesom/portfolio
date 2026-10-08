@@ -34,7 +34,7 @@ const Header = () => {
                             <Github className="h-6 w-6" />
                             <span className="sr-only">GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/million-angesom-101b571a1" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+                        <a href="https://www.linkedin.com/in/million-angesom-asefaw-101b571a1" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                             <Linkedin className="h-6 w-6" />
                             <span className="sr-only">LinkedIn</span>
                         </a>
@@ -72,7 +72,7 @@ const Header = () => {
                             <a href="https://github.com/MilliAngesom" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                                 <Github className="h-6 w-6" />
                             </a>
-                            <a href="https://www.linkedin.com/in/million-angesom-101b571a1" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+                            <a href="https://www.linkedin.com/in/million-angesom-asefaw-101b571a1" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                                 <Linkedin className="h-6 w-6" />
                             </a>
                         </div>
@@ -84,3 +84,4 @@ const Header = () => {
 };
 
 export default Header;
+
